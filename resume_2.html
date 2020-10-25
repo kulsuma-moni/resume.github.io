@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>resume</title>
+    <!--=== ALL CSS Here ===-->
+    <!--=== Bootstrap ===-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--=== Fontawesome icon ===-->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--=== wow animation ===-->
+    <link rel="stylesheet" href="assets//css/plugin/animate.css">
+    <!--=== Custom CSS ===-->
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: none;
+}
+.btn.focus,
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}
+button:focus {
+  outline: none;
+}
+.form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.resume_{
+    border: 2px solid #65c2c2;
+}
+.demo_re_2 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  
+}
+
+.demo_re_2::before {
+  position: absolute;
+  content: '';
+  background: #CBE9E9;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.demo_re_2 .resum_border {
+  /* border: 2px solid #65c2c2; */
+  padding-bottom: 40px;
+}
+
+.demo_re_2 .add_more_popup {
+  text-transform: capitalize;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.demo_re_2 .per_prof {
+  text-align: center;
+  height: 150px;
+  position: relative;
+  top: 50%;
+}
+
+.demo_re_2 .per_prof .form-popup {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  z-index: 9;
+}
+
+.demo_re_2 .per_prof .form-popup .form-container .modal_btn {
+  position: relative;
+  left: -19%;
+  bottom: -16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.demo_re_2 .per_prof .form-popup .form-container .modal_btn::after {
+  position: absolute;
+  content: '\f2ed';
+  font-size: 20px;
+  right: -4%;
+  top: 10%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: #011246;
+  cursor: pointer;
+}
+
+.demo_re_2 .resum_ctn {
+  padding: 15px 0px;
+}
+
+.demo_re_2 .resum_ctn .resum_heading h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #000000;
+  background: #CBE9E9;
+  text-align: center;
+}
+
+.demo_re_2 .resum_ctn p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.demo_re_2 .resum_ctn span {
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #1f1e1ebb;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 20px;
+  margin-bottom: 7px;
+}
+
+.demo_re_2 .resum_ctn span:hover, .demo_re_2 .resum_ctn span:focus {
+  color: #10122e;
+}
+
+.demo_re_2 .courses_area .present_date {
+  position: relative;
+}
+
+.demo_re_2 .courses_area .present_date label {
+  margin-left: 0px;
+  left: 2%;
+}
+
+.demo_re_2 .courses_area .present_date input {
+  width: 70%;
+  margin: 0;
+  position: absolute;
+  left: 32%;
+  top: 130%;
+}
+
+.demo_re_2 .courses_area .end_date {
+  margin-bottom: 20px;
+}
+
+.demo_re_2 .courses_area .end_date input {
+  width: 70%;
+  margin: 0;
+}
+
+.demo_re_2 .courses_area label {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #011246;
+}
+
+.demo_re_2 .courses_area .en_in {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.demo_re_2 .courses_area .en_in span .toggler_btn {
+  width: 35px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 65px;
+}
+
+.demo_re_2 .courses_area .en_in span .toggler_btn input:checked + .toggle_switch::before {
+  transform: translateX(32px);
+  -webkit-transform: translateX(32px);
+  -moz-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  -o-transform: translateX(32px);
+}
+
+.demo_re_2 .courses_area .en_in .pre_txt {
+  margin: 0 0 0 -25px;
+}
+
+.demo_re_2 .demo_re_left {
+  margin-top: 110px;
+}
+
+.demo_re_2 .demo_re_left .form-popup {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: -7%;
+  z-index: 9;
+}
+
+.demo_re_2 .demo_re_left .form-popup .form-container .modal_btn {
+  position: relative;
+  left: 15%;
+  bottom: -16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.demo_re_2 .demo_re_left .form-popup .form-container .modal_btn::after {
+  right: 30%;
+}
+
+.demo_re_2 .demo_re_right {
+  margin-top: 110px;
+  position: relative;
+}
+
+.demo_re_2 .demo_re_right::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 700px;
+  background: #CBE9E9;
+  left: 0;
+  top: 0;
+}
+
+.demo_re_2 .demo_re_right .form-popup {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: -55%;
+  z-index: 9;
+}
+
+.demo_re_2 .demo_re_right .form-popup .form-container .modal_btn {
+  position: relative;
+  left: 15%;
+  bottom: -16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.demo_re_2 .demo_re_right .form-popup .form-container .modal_btn::after {
+  right: 30%;
+}
+
+.demo_re_2 .demo_re_right .quali_summ .text_style {
+  position: absolute;
+  border-bottom: 1px solid #ced4da;
+  left: 17%;
+  width: 66%;
+  top: 8%;
+}
+
+.demo_re_2 .demo_re_right .quali_summ .text_style li a {
+  color: #011246;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.demo_re_2 .demo_re_right .quali_summ .text_style li a.active {
+  background: #f3f1f3;
+  border-radius: 5px;
+}
+
+.demo_re_2 .demo_re_right .quali_summ textarea {
+  height: 200px;
+  padding: 54px 10px;
+}
+
+    select {
+    margin: 0 auto 10px auto;
+    width: 70%;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    }
+    select option {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    }
+    select:focus {
+    outline: none;
+    border-color: #5e5e62;
+    }
+    label {
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    left: 15%;
+    }
+    input {
+    margin: 0 auto 10px auto;
+    width: 70%;
+    padding: 10px;
+    }
+    input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    font-family: "Montserrat", sans-serif;
+    }
+    input:-ms-input-placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    font-family: "Montserrat", sans-serif;
+    }
+    input::-ms-input-placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    font-family: "Montserrat", sans-serif;
+    }
+    input::placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    font-family: "Montserrat", sans-serif;
+    }
+    input:focus {
+    outline: none;
+    border-color: #5e5e62;
+    }
+    textarea {
+    margin: 0 auto 10px auto;
+    width: 70%;
+    padding: 10px;
+    height: 100px;
+    }
+    textarea::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    }
+    textarea:-ms-input-placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    }
+    textarea::-ms-input-placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    }
+    textarea::placeholder {
+    font-size: 16px;
+    color: #5e5e62;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    }
+    textarea:focus {
+    outline: none;
+    border-color: #5e5e62;
+    }
+    .form-container {
+    width: 700px;
+    padding: 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 9px 5px #dedbdb;
+            box-shadow: 0px 5px 9px 5px #dedbdb;
+    }
+    .form-container .modal_btn {
+    position: relative;
+    left: -20%;
+    bottom: -16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    .form-container .modal_btn::after {
+    position: absolute;
+    content: '\f2ed';
+    font-size: 20px;
+    right: 0%;
+    top: 10%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #011246;
+    cursor: pointer;
+    }
+    .form-container .cancel {
+    background-color: #bd3944;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    }
+    .form-container .save {
+    background-color: #1dbf73;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    }
+
+    .form-container .btn:hover {
+    opacity: 1;
+    }
+
+    .summary_area {
+    position: relative;
+    display: none;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    }
+
+    .summary_area .text_style {
+    position: absolute;
+    left: 15%;
+    top: 22%;
+    width: 70%;
+    background: #fafafa;
+    padding: 10px 26px;
+    }
+
+    .summary_area .text_style ul li {
+    margin-right: 12px;
+    }
+
+    .summary_area .text_style ul li a {
+    color: #011246;
+    font-size: 20px;
+    line-height: 1.5;
+    }
+    .summary_area .text_style ul li a.active {
+    background: #f3f1f3;
+    border-radius: 5px;
+    }
+
+    </style>
+</head>
+<body>
+  <section class="resume_2">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-sm-12">
+            <div class="demo_re_2 demo_template">
+                <div class="resum_border">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="per_prof resum_ctn text-center">
+                                <p class="demo_re_2_pop_1" id="data_output_14">name</p>
+                            <!-- profile POPUP START  -->
+                            <div class="form-popup" id="re_2_pop_1">
+                                <form action="/action_page.php" class="form-container profile_propertis_14">
+                                    <input type="text" placeholder="name" class="form-control" id="name_input_2">
+                                <ul class="modal_btn">
+                                    <li><a href="#" class="btn cancel re_2_close_1">close</a></li>
+                                    <li><a href="#" class="btn save" type="submit" id="data_insert_14">save</a></li>
+                                </ul>
+                                </form>
+                            </div>
+                            <!-- profile POPUP END -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                            <div class="demo_re_left">
+                                <div class="contact resum_ctn">
+                                        <div class="resum_heading">
+                                            <h4>contact</h4>
+                                        </div>
+                                        <div class="demo_re_2_pop_2" id="data_output_15">
+                                            <span>location</span><br>
+                                            <span>phone number</span><br>
+                                            <span>email</span>
+                                        </div>
+                                <!-- BASIC INFO POPUP START  -->
+                                <div class="form-popup" id="re_2_pop_2">
+                                    <form action="/action_page.php" class="form-container profile_propertis_15">
+                                        <input type="text" placeholder="location" class="form-control" id="location_input_2">
+                                        <input type="text" placeholder="phone number" class="form-control" id="phone_input_2">
+                                        <input type="email" placeholder="example@gmail.com" class="form-control" id="email_input_2">
+                                        <ul class="modal_btn">
+                                            <li><a href="#" class="btn cancel bas_close_1">close</a></li>
+                                            <li><a href="#" class="btn save" type="submit" id="data_insert_15">save</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <!-- BASIC INFO POPUP END -->
+                                </div>
+                                <div class="education_area resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>education</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_8" id="data_output_21">
+                                        <span>country of university/college</span><br>
+                                        <span>university/college name</span><br>
+                                        <span>degree</span><br>
+                                        <span>major subject</span><br>
+                                        <span>year of gradution</span>
+                                    </div>
+                                <!-- education POPUP START  -->
+                                <div class="form-popup" id="re_2_pop_8">
+                                    <form action="/action_page.php" class="form-container profile_propertis_21">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="edu_country">
+                                                    <div class="form">
+                                                        <select class="form-control" id="country_input_2" name="country of college/university">
+                                                            <option value="">country of college/university *</option>
+                                                            <option value="bangladesh">Bangladesh</option>
+                                                            <option value="japan">Japan</option>
+                                                            <option value="barisal college">Barissal College</option>
+                                                            <option value="usa">U.S.A</option>
+                                                            <option value="uk">U.K</option>
+                                                            <option value="turosko">Turosko</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="edu_uni">
+                                                    <input class="form-control" id="university_input_2" type="text" name="university name" placeholder="university/college name *" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="edu_uni">
+                                                    <div class="form">
+                                                        <select class="form-control" id="degree_input_2" name="certificate">
+                                                            <option value="">certificate *</option>
+                                                            <option value="llb">LLB</option>
+                                                            <option value="llm">LLM</option>
+                                                            <option value="ma">M.A</option>
+                                                            <option value="usa">M.S.C</option>
+                                                            <option value="degree">DEGREE</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="edu_uni">
+                                                    <input type="text" id="major_input_2" class="form-control" placeholder="major subject *" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="edu_uni">
+                                                    <div class="form">
+                                                        <select class="form-control" id="graduation_input_2" name="year of gradution">
+                                                            <option value="">Year of graduation *</option>
+                                                            <option value="2010">2010</option>
+                                                            <option value="2011">2011</option>
+                                                            <option value="2012">2012</option>
+                                                            <option value="2013">2013</option>
+                                                            <option value="2014">2014</option>
+                                                            <option value="2015">2015</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="modal_btn">
+                                            <li><a href="#" class="btn cancel education_close_1">close</a></li>
+                                            <li><a href="#" class="btn save" type="submit" id="data_insert_21">save</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <!-- education POPUP END -->
+                                </div>
+                            <!-- ADD MORE EDUCATION POPUP START -->
+                            <div class="add_more_popup sub_education">
+                                <P id="data_sub_output_6"></P>
+                                <p class="demo_re_2_subpop_3"><i class="fas fa-plus"></i> add education</p>
+                                <div class="add_more">
+                                    <div class="form-popup" id="re_2_sub_pop_3">
+                                        <form action="/action_page.php" class="form-container sub_profile_propertis_6">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="edu_country">
+                                                        <div class="form">
+                                                            <select class="form-control" id="country_sub_input_2" name="country of college/university">
+                                                                <option value="">country of college/university *</option>
+                                                                <option value="bangladesh">Bangladesh</option>
+                                                                <option value="japan">Japan</option>
+                                                                <option value="barisal college">Barissal College</option>
+                                                                <option value="usa">U.S.A</option>
+                                                                <option value="uk">U.K</option>
+                                                                <option value="turosko">Turosko</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="edu_uni">
+                                                        <input class="form-control" type="text" name="university name" id="university_sub_input_2" placeholder="university/college name *" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="edu_uni">
+                                                        <div class="form">
+                                                            <select class="form-control" name="certificate" id="subject_sub_input_2">
+                                                                <option value="">certificate *</option>
+                                                                <option value="llb">LLB</option>
+                                                                <option value="llm">LLM</option>
+                                                                <option value="ma">M.A</option>
+                                                                <option value="usa">M.S.C</option>
+                                                                <option value="degree">DEGREE</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="edu_uni">
+                                                        <input type="text" class="form-control" placeholder="major subject *" id="main_sub_input_2" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="edu_uni">
+                                                        <div class="form">
+                                                            <select class="form-control" name="year of gradution" id="graduation_sub_input_2">
+                                                                <option value="">Year of graduation *</option>
+                                                                <option value="2010">2010</option>
+                                                                <option value="2011">2011</option>
+                                                                <option value="2012">2012</option>
+                                                                <option value="2013">2013</option>
+                                                                <option value="2014">2014</option>
+                                                                <option value="2015">2015</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel sub_close_6">close</a></li>
+                                                <li><a href="#" class="btn save" type="submit" id="data_sub_insert_6">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ADD MORE EDUCATION POPUP END -->
+                                <div class="lan_guage resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>language</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_9" id="data_output_18">
+                                        <span>add language</span>
+                                    </div>
+                                    <!-- LANGUAGE POPUP START -->
+                                    <div class="form-popup" id="re_2_pop_9">
+                                        <form action="/action_page.php" class="form-container profile_propertis_18">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="lan_info add_lan">
+                                                        <input type="text" class="form-control lan_ans" id="language_input_2" placeholder="add language *" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel langu_close_1">close</a></li>
+                                                <li><a href="#" class="btn save" type="submit" id="data_insert_18">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <!-- LANGUAGE POPUP END -->
+                                </div>
+                                <div class="courses_area resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>courses</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_11" id="data_output_19">
+                                        <span>courses name</span><br>
+                                        <span>institution name</span><br>
+                                        <span>start & end date</span>
+                                    </div>
+                                <!-- courses POPUP START  -->
+                                <div class="form-popup" id="re_2_pop_11">
+                                    <form action="/action_page.php" class="form-container profile_propertis_19">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="cour_nam">
+                                                    <input type="text" class="form-control" id="courses_input_2" placeholder="courses name*" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="cour_institution">
+                                                    <input type="text" class="form-control cour_an" placeholder="institution name *" id="institution_input_2" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="cour_date">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                            <div class="present_date">
+                                                                <label>start & end date</label>
+                                                                <input type="date" class="form-control" id="present_date_input_2">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                            <div class="end_date">
+                                                                <label class="en_in"> 				     
+                                                                    <span>
+                                                                        <span class="toggler_btn">
+                                                                            <input type="checkbox">
+                                                                            <span class="toggle_switch en_date"></span>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="pre_txt">present</span>
+                                                                </label>
+                                                                <input type="date" class="form-control en_input" id="end_input_2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="modal_btn">
+                                            <li><a href="#" class="btn cancel co_close_1">close</a></li>
+                                            <li><a href="#" class="btn save" type="submit" id="data_insert_19">save</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <!-- courses POPUP END -->
+                                </div>
+                                <div class="referance_area resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>referance</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_10" id="data_output_24">
+                                        <span>add your referance </span>
+                                    </div>
+                                    <!-- REFERANCE POPUP START -->
+                                    <div class="form-popup" id="re_2_pop_10">
+                                        <form action="/action_page.php" class="form-container profile_propertis_24">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="ref_info add_ref">
+                                                        <input type="text" id="reference_input_2" class="form-control lan_ans" placeholder="add your referance *" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel referance_close_1">close</a></li>
+                                                <li><a href="#" class="btn save" id="data_insert_24" type="submit">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <!-- REFERANCE POPUP END -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                            <div class="demo_re_right">
+                                <div class="work_exp resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>work experience</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_6" id="data_output_20">
+                                        <span>job titel</span><br>
+                                        <span>company name</span><br>
+                                        <span>write your work experience</span>
+                                    </div>
+                                    <!-- WORK EXPERIENCE POPUP START -->
+                                    <div class="form-popup" id="re_2_pop_6">
+                                        <form action="/action_page.php" class="form-container profile_propertis_20">
+                                            <input type="text" placeholder="job titel" id="job_input_2" class="form-control" name="titel" required>
+                                            <input type="text" placeholder="company name" id="pass_input_2" name="company" class="form-control" required>
+                                            <textarea name="experience" class="form-control" id="experience_input_2" placeholder="write your work experience"></textarea>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel wo_close_1">close</a></li>
+                                                <li><a href="#" class="btn save" id="data_insert_20" type="submit">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <!-- WORK EXPERIENCE POPUP END -->
+                                </div>
+                            <!--  ADD MORE WORK EXPERIENCE POPUP START -->
+                            <div class="add_more_popup sub_work_experience">
+                                <div id="data_sub_output_5">
+                                    <span></span><br>
+                                    <span></span><br>
+                                    <span></span>
+                                </div>
+                                <p class="demo_re_2_subpop_2"><i class="fas fa-plus"></i> add work experience</p>
+                                <div class="add_more">
+                                    <div class="form-popup" id="re_2_sub_pop_2">
+                                        <form action="/action_page.php" class="form-container sub_profile_propertis_5">
+                                            <input type="text" placeholder="job titel" class="form-control" name="titel" id="job_sub_input_2" required>
+                                            <input type="text" placeholder="company name" name="company" class="form-control" id="pass_sub_input_2" required>
+                                            <textarea name="experience" class="form-control" placeholder="write your work experience" id="experience_sub_input_2"></textarea>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel sub_close_5">close</a></li>
+                                                <li><a href="#" class="btn save" type="submit" id="data_sub_insert_5">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ADD MORE WORK EXPERIENCE POPUP END -->
+                            <div class="skills resum_ctn">
+                                <div class="resum_heading">
+                                    <h4>skill</h4>
+                                </div>
+                                <div class="demo_re_2_pop_3" id="data_output_16">
+                                    <span>skill</span>
+                                    <span>year of experience</span>
+                                </div>
+                            <!-- SKILL INFO POPUP START  -->
+                            <div class="form-popup" id="re_2_pop_3">
+                                <form action="/action_page.php" class="form-container profile_propertis_16">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="skill_info add_skill">
+                                                <input type="text" class="form-control" id="skill_input_2" placeholder="add skill *" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="skill_expe">
+                                                <div class="form">
+                                                    <select class="form-control" id="expe_input_2" name="year of experience">
+                                                        <option value="">year of experience *</option>
+                                                        <option value="1 year">1 year</option>
+                                                        <option value="2 years">2 years</option>
+                                                        <option value="3 years">3 years</option>
+                                                        <option value="4 years">4 years</option>
+                                                        <option value="more">more</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="modal_btn">
+                                        <li><a href="#" class="btn cancel ski_close_1">close</a></li>
+                                        <li><a href="#" class="btn save" type="submit" id="data_insert_16">save</a></li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <!-- SKILL INFO POPUP END -->
+                            </div>
+                            <!-- SKILL ADD MORE POPUP START -->
+                            <div class="add_more_popup sub_skill">
+                                <div id="data_sub_output_4">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <p class="demo_re_2_subpop_1"><i class="fas fa-plus"></i> add skill</p>
+                                <div class="add_more">
+                                    <div class="form-popup" id="re_2_sub_pop_1">
+                                        <form action="/action_page.php" class="form-container sub_profile_propertis_4">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="skill_info add_skill">
+                                                        <input type="text" class="form-control" placeholder="add skill *" id="skill_sub_input_2" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="skill_expe">
+                                                        <div class="form">
+                                                            <select class="form-control" id="sub_expe_input_2" name="year of experience">
+                                                                <option value="">year of experience *</option>
+                                                                <option value="1 year">1 year</option>
+                                                                <option value="2 years">2 years</option>
+                                                                <option value="3 years">3 years</option>
+                                                                <option value="4 years">4 years</option>
+                                                                <option value="more">more</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel sub_close_4">close</a></li>
+                                                <li><a href="#" class="btn save" type="submit" id="data_sub_insert_4">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SKILL ADD MORE POPUP END -->
+                            <div class="certification resum_ctn">
+                                <div class="resum_heading">
+                                    <h4>certificat</h4>
+                                </div>
+                                <div class="demo_re_2_pop_4" id="data_output_17">
+                                    <span>certificat</span>
+                                </div>
+                            <!-- certification POPUP START  -->
+                            <div class="form-popup" id="re_2_pop_4">
+                                <form action="/action_page.php" class="form-container profile_propertis_17">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="certi_fication">
+                                                <input type="text" class="form-control" placeholder="add certificat *" id="certificat_input_2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="modal_btn">
+                                        <li><a href="#" class="btn cancel cer_close_1">close</a></li>
+                                        <li><a href="#" class="btn save" type="submit" id="data_insert_17">save</a></li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <!-- certification POPUP END -->
+                            </div>
+                                <div class="custom_area resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>achievement</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_12" id="data_output_22">
+                                        <span>write your achievement</span>
+                                    </div>
+                                    <!-- ACHIEVEMENT  POPUP START -->
+                                    <div class="form-popup" id="re_2_pop_12">
+                                        <form action="/action_page.php" class="form-container profile_propertis_22">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom_textarea">
+                                                        <textarea name="custom_sec" id="custom_input_2" class="form-control" placeholder="write your achievement"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel custom_2_close_1">close</a></li>
+                                                <li><a href="#" class="btn save" id="data_insert_22" type="submit">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <!-- ACHIEVEMENT POPUP END -->
+                                </div>
+                                <div class="quali_summ resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>qualification</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_7" id="data_output_23">
+                                        <span>write qualification summary</span>
+                                    </div>
+                                    <!-- SUMMARY POPUP START -->
+                                    <div class="form-popup" id="re_2_pop_7">
+                                        <form action="/action_page.php" class="form-container profile_propertis_23">
+                                            <div class="text_style">
+                                                <ul>
+                                                    <li><a href="#" class="btn font_bold_pop op_rem"><i class="fas fa-bold"></i></a></li>
+                                                    <li><a href="#" class="btn font_italic_pop sty_rem"><i class="fas fa-italic"></i></a></li>
+                                                    <li><a href="#" class="btn text_underline_pop de_rem"><i class="fas fa-underline"></i></a></li>
+                                                    <li><a href="#" class="btn"><i class="fas fa-list-ol"></i></a></li>
+                                                    <li><a href="#" class="btn"><i class="fas fa-align-left"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        <textarea name="summary" class="form-control summ_ary_pop" id="summ_ary_input_2" placeholder="write skill summary"></textarea>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel summary_close_1">close</a></li>
+                                                <li><a href="#" class="btn save" id="data_insert_23" type="submit">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <!-- SUMMARY POPUP END -->
+                                </div>
+                                <div class="referance_area resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>referance</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_10" id="data_output_24">
+                                        <span>add your referance </span>
+                                    </div>
+                                    <!-- REFERANCE POPUP START -->
+                                    <div class="form-popup" id="re_2_pop_10">
+                                        <form action="/action_page.php" class="form-container profile_propertis_24">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="ref_info add_ref">
+                                                        <input type="text" id="reference_input_2" class="form-control lan_ans" placeholder="add your referance *" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel referance_close_1">close</a></li>
+                                                <li><a href="#" class="btn save" id="data_insert_24" type="submit">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <!-- REFERANCE POPUP END -->
+                                </div>
+                                <!-- <div class="text_area resum_ctn">
+                                    <div class="resum_heading">
+                                        <h4>text section</h4>
+                                    </div>
+                                    <div class="demo_re_2_pop_13" id="data_output_25">
+                                        <span>add your comment</span>
+                                    </div>
+                                     text POPUP START -->
+                                    <!-- <div class="form-popup" id="re_2_pop_13">
+                                        <form action="/action_page.php" class="form-container profile_propertis_25">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="text_section">
+                                                        <textarea class="form-control" id="text_input_2" placeholder="add your comment"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="modal_btn">
+                                                <li><a href="#" class="btn cancel te_close_1">close</a></li>
+                                                <li><a href="#" class="btn save" id="data_insert_25" type="submit">save</a></li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    -- TEXT POPUP END -->
+                                <!-- </div> --> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>	
+</section>
+
+    <!--=== ALL JS Here ===-->
+    <!--=== jQuery 3.4.1 ===-->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+	<!--=== Bootstrap js ===-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--=== WOW Animation Js===-->
+	<script src="assets/js/plugin/wow.min.js"></script>
+	
+      <!--=== smooth scroll js===-->
+	  <script src="assets/js/plugin/smoothscroll.js"></script>
+	  <script src="assets/js/plugin/FileSaver.min.js"></script>
+
+
+    <!--=== Custom JS ===-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

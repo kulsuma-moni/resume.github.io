@@ -1,0 +1,831 @@
+/*
+	@File:Personal Data Styles
+
+	* This file contains the styling for the actual template, this
+	is the file you need to edit to change the look of the
+	template.
+
+	This files contents are outlined below>>>>>
+
+	*******************************************
+	*******************************************
+
+	==== INDEX PAGE CSS
+	
+	** - Default CSS
+	** - Parsonal data area css
+*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+// DEFULT CSS
+
+
+$font-family-1 : 'Open Sans', sans-serif;
+$font-family-2 : 'Montserrat', sans-serif;
+$sidebar_bg:#393a3c;;
+$dashbord_bg:#efececfc;
+$font_size_1:20px;
+$line_height_1:1;
+$font_size_2:18px;
+$line_height_2:1.5;
+$font_color_white:#fff;
+$font_color_2:#011246;
+$font_color_3:#5e5e62;
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+html,
+body{
+    width: 100%;
+    height: 100%;
+    font-family: $font-family-2;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-family-1;
+}
+ul{
+    margin: 0;
+    padding: 0;
+
+    li{
+        list-style-type: none;
+        display: inline-block;
+
+        a{
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+.btn.focus,
+.btn:focus {
+outline:none;
+-webkit-box-shadow:0 0 0 .2rem rgba(0, 123, 255, 0);
+       box-shadow:0 0 0 .2rem rgba(0, 123, 255, 0);
+}
+button:focus {
+outline:none;
+}
+
+.form-control:focus {
+outline:0;
+-webkit-box-shadow:none;
+        box-shadow:none;
+}
+
+%common_hd{
+    font-family: $font-family-1;
+    font-size: 20px;
+    line-height:$line_height_2;
+    text-transform: capitalize;
+    color: $font_color_white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+%common_sub_hd{
+    font-family: $font-family-1;
+    font-size: 16px;
+    line-height:$line_height_2;
+    text-transform: capitalize;
+    color: $font_color_2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 320px) and(max-width:575px){
+  .personal_data_area{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+.s-sidebar__trigger {
+    z-index: 2;
+    position: absolute;
+    top: 6px;
+    left: 265px;
+    width: 44px;
+    height:44px ;
+    border-radius: 3px;
+    background:$sidebar_bg;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: block;
+}
+  
+  .s-sidebar__trigger > i {
+    display: inline-block;
+    margin: 8px 0 0 9px;
+    font-size: 30px;
+    color: #1dbf73;
+  }
+  
+  .s-sidebar__nav {
+    position: absolute;
+    top: 0;
+    left: -310px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    width: 300px;
+    height: 650px;
+    background: $sidebar_bg;
+    color: $font_color_white;
+    z-index: 1;
+  } 
+  .s-sidebar__nav ul {
+    position: absolute;
+    top: 3em;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: auto;
+}
+       
+  .s-sidebar__nav:hover,
+  .s-sidebar__nav:focus,
+  .s-sidebar__trigger:focus+ .s-sidebar__nav,
+  .s-sidebar__trigger:hover+ .s-sidebar__nav {
+    left: -20px;
+  }
+  .animated_sidebar .nav_btn{
+      top: 400px;
+  }
+    .personal_data_area .animated_sidebar .nav_btn {
+      top: 572px;
+      right: 64%;
+  }
+  .personal_data_area .animated_sidebar {
+    height: auto;
+    width: 0%;
+  }
+.personal_data_area .right_content .modal {
+  top: 40px;
+  left: 0%;
+}
+
+.personal_data_area .right_content textarea {
+  width: 80%;
+}
+.personal_data_area .right_content label {
+  left: 11%;
+}
+.personal_data_area .right_content input {
+  width: 80%;
+}
+.personal_data_area .right_content .form-popup {
+  left: 0%;
+  z-index: 9;
+}
+
+.personal_data_area .right_content select {
+
+  width: 80%;
+}
+
+.personal_data_area .right_content .form-container {
+  width: 300px;
+}
+.personal_data_area .right_content .demo_re_1 .id_info {
+
+  margin: 0 auto 40px 35px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style li a {
+
+  font-size: 12px;
+}
+.personal_data_area .right_content .demo_template {
+  padding: 60px 20px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-container .modal_btn::after {
+  right:20%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup .form-container .modal_btn {
+  left: 9%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-container .modal_btn {
+  left: 9%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup .form-container .modal_btn::after {
+  right: 20%;
+}
+.personal_data_area .right_content {
+  z-index: 0;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left::before {
+display: none;
+}
+.personal_data_area .right_content .demo_template {
+  left: 0%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-popup {
+  left:-21px;
+}
+.personal_data_area .right_content .form-container .cancel {
+ 
+  padding: 7px 14px;
+  font-size: 12px;
+}
+.personal_data_area .right_content .form-container .save {
+  padding: 7px 14px;
+  font-size: 12px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup {
+  left: -21px;
+}
+.personal_data_area .colour_area .colour_box {
+  margin-left: 5px;
+}
+.personal_data_area .colour_area .colour_box span {
+  margin: 10px 4px 10px 10px;
+}
+.font_list ul {
+  margin-top: 30px;
+}
+.personal_data_area .resume_tab .nav-tabs .nav-link {
+  font-size: 14px;
+  padding: 8px 14px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .present_date label {
+  margin-left: 9px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .present_date input {
+  width: 80%;
+  left: 10%;
+  top: 88%;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .present_date label {
+  margin-left: -56px;
+  left: 0;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .present_date input {
+  width: 80%;
+  left: 10%;
+  top: 88%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .end_date {
+  margin-top: 57px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .en_in span .toggler_btn {
+  left: 12px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .en_in .pre_txt {
+  margin: 0 0 0 88px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .end_date input {
+  width: 80%;
+}
+
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .end_date {
+  margin-top: 57px;
+  margin-left: 18px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .end_date input {
+  width: 86%;
+  margin: 0 0px 0 11px;
+}
+
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date {
+  margin-top: 57px;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .en_in span .toggler_btn {
+  left: 12px;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .en_in .pre_txt {
+  margin: 0 0 0 88px;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date input {
+  width: 80%;
+}
+
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date {
+  margin-top: 57px;
+  margin-left: 18px;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date input {
+  width: 86%;
+  margin: 0 0px 0 11px;
+}
+.personal_data_area .right_content .pre_down_btn ul li .print_btn {
+  font-size: 12px;
+  padding: 10px 17px;
+}
+.personal_data_area .right_content .pre_down_btn ul li .down_btn {
+  font-size: 12px;
+  padding: 10px 17px;
+  margin-left: 0;
+}
+.demo_re_2 .demo_re_right {
+  margin-top: 24px;
+}
+.demo_re_2 .per_prof .form-popup{
+  left: 0%;
+}
+.demo_re_2 .demo_re_left .form-popup{
+  left: 0%;
+}
+.personal_data_area .right_content .demo_re_1 .id_info .form-popup {
+  left: -27%;
+}
+.personal_data_area .right_content .form-container .modal_btn {
+  left: -16%;
+}
+}
+
+@media (min-width: 576px) and(max-width:767px){
+  .personal_data_area{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+.s-sidebar__trigger {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 512px;
+    width: 44px;
+    height:44px ;
+    border-radius: 3px;
+    background:$sidebar_bg;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: block;
+}
+  .s-sidebar__trigger > i {
+    display: inline-block;
+    margin: 8px 0 0 9px;
+    font-size: 30px;
+    color: #1dbf73;
+  }
+  
+  .s-sidebar__nav {
+    position: absolute;
+    top: 0;
+    left: -340px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    width: 330px;
+    height: 650px;
+    background: $sidebar_bg;
+    color: $font_color_white;
+    z-index: 1;
+  } 
+  .s-sidebar__nav ul {
+    position: absolute;
+    top: 3em;
+    left: 14px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: auto;
+}
+  .s-sidebar__nav:hover,
+  .s-sidebar__nav:focus,
+  .s-sidebar__trigger:focus+ .s-sidebar__nav,
+  .s-sidebar__trigger:hover+ .s-sidebar__nav {
+    left: -15px;
+  }
+  .animated_sidebar .nav_btn{
+      top: 400px;
+  }
+    .personal_data_area .animated_sidebar .nav_btn {
+      top: 554px;
+      right: 64%;
+  }
+  .personal_data_area .animated_sidebar {
+    height: auto;
+    width: 0%;
+  }
+
+.personal_data_area .right_content textarea {
+  width: 80%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .present_date input {
+  width: 80%;
+  left: 10%;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .present_date input {
+  width: 80%;
+  left: 10%;
+}
+.personal_data_area .right_content input {
+  width: 80%;
+}
+.personal_data_area .right_content .form-popup {
+  left: 0%;
+  z-index: 9;
+}
+.personal_data_area .right_content .form-container {
+  width: 500px;
+}
+.personal_data_area .right_content label {
+  left: -4%;
+}
+.personal_data_area .right_content select {
+
+  width: 80%;
+}
+.personal_data_area .right_content .form-container .modal_btn {
+  left: 50%;
+}
+.personal_data_area .right_content .form-container {
+  width: 500px;
+}
+.personal_data_area .right_content .demo_re_1 .id_info {
+
+  margin: 0 auto 40px -40px;
+}
+.personal_data_area .right_content .demo_re_1 .id_info .form-popup{
+  left: 6%;
+}
+.personal_data_area .right_content .form-container .modal_btn{
+  left: -20%;
+}
+.personal_data_area .right_content .form-container .modal_btn::after {
+  right: -10%;
+}
+.personal_data_area .right_content .demo_template {
+  padding: 60px 20px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-container .modal_btn::after {
+  right:20%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup {
+
+  left:0%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup .form-container .modal_btn {
+  left: 9%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-container .modal_btn {
+  left: 9%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup .form-container .modal_btn::after {
+  right: 20%;
+}
+.personal_data_area .right_content {
+  z-index: 0;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left::before {
+display: none;
+}
+.personal_data_area .resume_tab .nav-tabs .nav-link {
+  font-size: 14px;
+}
+.personal_data_area .right_content .demo_template {
+  left: 0%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-popup {
+  left: 0;
+}
+.personal_data_area .colour_area .colour_box {
+  margin-left: 5px;
+}
+.personal_data_area .colour_area .colour_box span {
+  margin: 10px 4px 10px 10px;
+}
+.font_list ul {
+  margin-top: 30px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .end_date {
+  margin-top: 82px;
+  margin-left: 42px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .end_date input {
+  width: 90%;
+  margin: 0;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .en_in span .toggler_btn {
+  left: 44px;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date {
+  margin-top: 82px;
+  margin-left: 42px;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date input {
+  width: 90%;
+  margin: 0;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .en_in span .toggler_btn {
+  left: 44px;
+}
+.demo_re_2 .demo_re_right {
+  margin-top: 24px;
+}
+.demo_re_2 .courses_area .present_date label {
+  margin-left: 0px;
+  left: -25%;
+}
+.demo_re_2 .demo_re_left .form-popup{
+  left: 0%;
+}
+.demo_re_2 .per_prof .form-popup{
+  left: 0%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .personal_data_area{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+.s-sidebar__trigger {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 693px;
+    width: 44px;
+    height:44px ;
+    border-radius: 3px;
+    background:$sidebar_bg;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: block;
+}
+  
+  .s-sidebar__trigger > i {
+    display: inline-block;
+    margin: 8px 0 0 9px;
+    font-size: 30px;
+    color: #1dbf73;
+  }
+  
+  .s-sidebar__nav {
+    position: absolute;
+    top: 0;
+    left: -310px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    width: 300px;
+    height: 650px;
+    background: $sidebar_bg;
+    color: $font_color_white;
+    z-index: 1;
+  }
+  .s-sidebar__nav ul {
+    position: absolute;
+    top: 3em;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: auto;
+}
+ 
+  .s-sidebar__nav:hover,
+  .s-sidebar__nav:focus,
+  .s-sidebar__trigger:focus+ .s-sidebar__nav,
+  .s-sidebar__trigger:hover+ .s-sidebar__nav {
+    left: -20px;
+  }
+  .animated_sidebar .nav_btn{
+      top: 400px;
+  }
+    .personal_data_area .animated_sidebar .nav_btn {
+      top: 570px;
+      right: 64%;
+  }
+  .personal_data_area .animated_sidebar {
+    height: auto;
+    width: 0%;
+  }
+  .personal_data_area .resume_tab .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 8px 14px;
+}
+.personal_data_area .right_content select {
+  width: 90%;
+}
+
+.personal_data_area .right_content .form-container .modal_btn {
+	left: -20%;
+  }
+  .personal_data_area .right_content .form-container {
+    width: 510px;
+  }
+.personal_data_area .right_content .modal {
+  top: 40px;
+  left: 0%;
+}
+.personal_data_area .colour_area .colour_box {
+  margin-left: 5px;
+}
+.personal_data_area .colour_area .colour_box span {
+  margin: 10px 4px 10px 10px;
+}
+.font_list ul {
+  margin-top: 30px;
+}
+.personal_data_area .right_content textarea {
+  width: 90%;
+}
+.personal_data_area .right_content label {
+  left: 11%;
+}
+.personal_data_area .right_content input {
+  width: 90%;
+}
+
+.personal_data_area .right_content .demo_re_1 .id_info {
+
+  margin: 0 auto 40px 0px;
+}
+.personal_data_area .right_content .demo_template {
+  padding: 60px 0px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-popup {
+  left: -18%;
+  
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-container .modal_btn {
+  left: 5%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .form-container .modal_btn::after {
+  right: 12%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup {
+
+  left: -87%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup .form-container .modal_btn {
+  left: 4%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup .form-container .modal_btn::after {
+
+  right: 10%;
+}
+.personal_data_area .right_content {
+  z-index: 0;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .present_date label {
+  margin-left: 6px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .present_date input {
+  width: 90%;
+  left: 9%;
+}
+
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .present_date label {
+  margin-left: 0px;
+  left: -17%;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .present_date input {
+  width: 90%;
+  left: 9%;
+}
+
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .end_date input {
+  width: 90%;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .en_in .pre_txt {
+  margin: 0 0 0 117px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .en_in span .toggler_btn {
+  left: 113px;
+}
+
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date input {
+  width: 90%;
+}
+.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .en_in span .toggler_btn {
+  left: 113px;
+}
+.demo_re_2 .demo_re_left .form-popup {
+  left: -99%;
+}
+
+.demo_re_2 .per_prof .form-popup {
+  left: -44%;
+}
+
+.personal_data_area .right_content .demo_re_1 .id_info .form-popup {
+  left: -5%;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    //   .personal_data_area .person_side_bar {
+    //     background: $sidebar_bg;
+    //     position: initial;
+    //     padding: 20px 30px;
+    //     left: -340px;
+    //     width: 300px;
+    //     height: 100vh;
+    //   }
+  
+    .s-sidebar__nav {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      overflow: hidden;
+      transition: all .3s ease-in;
+      width: 320px;
+      height: 650px;
+      background: $sidebar_bg;
+      color: $font_color_white;
+      z-index: 1;
+    }   
+    .s-sidebar__nav ul {
+      position: absolute;
+      top: 3em;
+      left: 20px;
+      margin: 0;
+      padding: 0;
+      width: 300px;
+      height: auto;
+  }
+  .font_list ul {
+    margin-top: 30px;
+}
+.personal_data_area .right_content .demo_re_1 .id_info {
+  margin: 0 auto 40px -50px;
+}
+  .personal_data_area .animated_sidebar .nav_btn {
+    top: 560px;
+    left: 0;
+} 
+.personal_data_area .resume_tab .nav-tabs .nav-link {
+  font-size: 14px;
+  padding: 14px 16px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .form-popup {
+  left: -81%;
+}
+
+
+    .personal_data_area .person_side_bar ul li h4.s-sidebar__nav-link span {
+      font-size: 14px;
+      margin-left: 1px;
+  }
+  .personal_data_area .toggler_btn {
+    width: 56px;
+    height: 24px;
+    margin: 0 22px;
+}
+.personal_data_area .person_side_bar ul li h4.s-sidebar__nav-link span .nav_add_btn i {
+  font-size: 12px;
+}
+.personal_data_area .person_side_bar ul li h4.s-sidebar__nav-link span .nav_add_btn span {
+  font-size: 12px;
+}
+.personal_data_area .person_side_bar ul li h4.s-sidebar__nav-link span .nav_add_btn {
+  right: 14px;
+}
+.personal_data_area .colour_area .colour_box {
+  margin-left: 5px;
+}
+.personal_data_area .colour_area .colour_box span {
+  margin: 10px 4px 10px 10px;
+}
+.personal_data_area .toggler_btn .toggle_switch::before {
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  font-size: 10px;
+}
+.demo_re_2 .courses_area .en_in span .toggler_btn {
+  left: 23px;
+}
+
+  .personal_data_area .person_side_bar ul li h4.s-sidebar__nav-link span span .toggler_btn {
+    right: 0px;
+}
+    .personal_data_area .person_side_bar ul li .skill_sub_link li h5 span span .toggler_btn {
+
+      margin: 0 -20px 0 0;
+    }
+    .personal_data_area .right_content .form-popup {
+      left: 0%;
+    }
+    .personal_data_area .right_content .form-container {
+      width: 600px;
+    }
+
+    .personal_data_area .right_content .form-container .modal_btn {
+      left: -17%;
+    }
+
+    .demo_re_2 .courses_area .present_date label {
+      margin-left: 0px;
+      left: 9%;
+  }
+
+}

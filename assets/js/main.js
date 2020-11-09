@@ -55,7 +55,7 @@ $("#data_insert_3").click( function(event){
     console.log(skill_inputValue,expe_inputValue);
     const skill= ` 
 	<span>${skill_inputValue}</span>
-	<span> ${expe_inputValue}<span
+	<span class="last_span">${expe_inputValue}<span
     `
 	data_output_3.innerHTML =skill;
 });
@@ -65,21 +65,36 @@ $('#data_insert_3').click(function(){
 });
 
 // SUB OUTPUT_1
-const sub_profile_propertis_1 = document.getElementById('sub_profile_propertis_1');
-const skill_sub_input_1 = document.getElementById('skill_sub_input_1');
-const sub_expe_input_1 = document.getElementById('sub_expe_input_1');
-const data_sub_output_1 = document.getElementById('data_sub_output_1');
-
 $("#data_sub_insert_1").click( function(event){
-    event.preventDefault();
+	event.preventDefault();
+	const sub_profile_propertis_1 = document.getElementById('sub_profile_propertis_1');
+	const skill_sub_input_1 = document.getElementById('skill_sub_input_1');
+	const sub_expe_input_1 = document.getElementById('sub_expe_input_1');
+	const data_sub_output_1 = document.getElementById('data_sub_output_1');
 	const skill_sub_input_1Value = skill_sub_input_1.value;
 	const sub_expe_input_1Value = sub_expe_input_1.value;
-    console.log(skill_sub_input_1Value,sub_expe_input_1Value);
-    const skill= ` 
-	<span>${skill_sub_input_1Value}</span>
-	<span>${sub_expe_input_1Value}</span>
-    `
-	data_sub_output_1.innerHTML =skill;
+	console.log(skill_sub_input_1Value,sub_expe_input_1Value);
+	const new_try =document.createElement("div");
+	new_try.className="new_div";
+	const new_skill_input =document.createElement("span");
+	const new_expe_input =document.createElement("span");
+	new_expe_input.style.paddingLeft="10px";
+	const remove =document.createElement("button");
+	remove.className="far fa-trash-alt";
+	const new_input_1 =document.createTextNode(skill_sub_input_1Value);
+	const new_input_2 =document.createTextNode(sub_expe_input_1Value);
+	new_skill_input.appendChild(new_input_1);
+	new_try.appendChild(new_skill_input);
+	new_expe_input.appendChild(new_input_2);
+	new_try.appendChild(new_expe_input);
+	new_try.appendChild(remove);
+	data_sub_output_1.appendChild(new_try);
+
+	$(remove).on("click", function(e){ //user click on remove text
+           
+		e.preventDefault(); 
+		$(this).parent('.new_div').remove(); 
+		});
 
 });
 
@@ -88,21 +103,37 @@ $('#data_sub_insert_1').click(function(){
 });
 
 // SUB OUTPUT_4
-const sub_profile_propertis_4 = document.getElementById('sub_profile_propertis_4');
-const skill_sub_input_2 = document.getElementById('skill_sub_input_2');
-const sub_expe_input_2 = document.getElementById('sub_expe_input_2');
-const data_sub_output_4 = document.getElementById('data_sub_output_4');
 
 $("#data_sub_insert_4").click( function(event){
-    event.preventDefault();
+	event.preventDefault();
+	const sub_profile_propertis_4 = document.getElementById('sub_profile_propertis_4');
+	const skill_sub_input_2 = document.getElementById('skill_sub_input_2');
+	const sub_expe_input_2 = document.getElementById('sub_expe_input_2');
+	const data_sub_output_4 = document.getElementById('data_sub_output_4');
 	const skill_sub_input_2Value = skill_sub_input_2.value;
 	const sub_expe_input_2Value = sub_expe_input_2.value;
-    console.log(skill_sub_input_2Value,sub_expe_input_2Value);
-    const skill= ` 
-	<span>${skill_sub_input_2Value} </span>
-	<span> ${sub_expe_input_2Value}</span>
-    `
-	data_sub_output_4.innerHTML =skill;
+	console.log(skill_sub_input_2Value,sub_expe_input_2Value);
+	const new_try =document.createElement("div");
+	new_try.className="new_div";
+	const new_skill_input =document.createElement("span");
+	const new_expe_input =document.createElement("span");
+	new_expe_input.style.paddingLeft="10px";
+	const remove =document.createElement("button");
+	remove.className="far fa-trash-alt";
+	const new_input_1 =document.createTextNode(skill_sub_input_2Value);
+	const new_input_2 =document.createTextNode(" "+ sub_expe_input_2Value);
+	new_skill_input.appendChild(new_input_1);
+	new_try.appendChild(new_skill_input);
+	new_expe_input.appendChild(new_input_2);
+	new_try.appendChild(new_expe_input);
+	new_try.appendChild(remove);
+	data_sub_output_4.appendChild(new_try);
+
+	$(remove).on("click", function(e){ //user click on remove text
+           
+		e.preventDefault(); 
+		$(this).parent('.new_div').remove(); 
+		});
 
 });
 
@@ -169,32 +200,53 @@ $('#data_insert_5').click(function(){
 
 
 // SUB OUTPUT_2
-const sub_profile_propertis_2 = document.getElementById('sub_profile_propertis_2');
-const country_sub_input_1 = document.getElementById('country_sub_input_1');
-const university_sub_input_1 = document.getElementById('university_sub_input_1');
-const subject_sub_input_1 = document.getElementById('subject_sub_input_1');
-const main_sub_input_1 = document.getElementById('main_sub_input_1');
-const graduation_sub_input_1 = document.getElementById('graduation_sub_input_1');
-const data_sub_output_2 = document.getElementById('data_sub_output_2');
-
 $("#data_sub_insert_2").click( function(event){
-    event.preventDefault();
+	event.preventDefault();
+	const sub_profile_propertis_2 = document.getElementById('sub_profile_propertis_2');
+	const country_sub_input_1 = document.getElementById('country_sub_input_1');
+	const university_sub_input_1 = document.getElementById('university_sub_input_1');
+	const subject_sub_input_1 = document.getElementById('subject_sub_input_1');
+	const main_sub_input_1 = document.getElementById('main_sub_input_1');
+	const graduation_sub_input_1 = document.getElementById('graduation_sub_input_1');
+	const data_sub_output_2 = document.getElementById('data_sub_output_2');
 	const country_sub_input_1Value = country_sub_input_1.value;
 	const university_sub_input_1Value = university_sub_input_1.value;
 	const subject_sub_input_1Value = subject_sub_input_1.value;
 	const main_sub_input_1Value = main_sub_input_1.value;
 	const graduation_sub_input_1Value = graduation_sub_input_1.value;
-    console.log(country_sub_input_1Value,university_sub_input_1Value,subject_sub_input_1Value,main_sub_input_1Value,graduation_sub_input_1Value);
-    const education= ` 
-	<div>
-	<span>${country_sub_input_1Value}</span><br>
-	<span>${university_sub_input_1Value} </span><br>
-	<span>${subject_sub_input_1Value}</span><br>
-	<span>${main_sub_input_1Value}</span><br>
-	<span>${graduation_sub_input_1Value}</span>
-</div>
-    `
-	data_sub_output_2.innerHTML =education;
+	console.log(country_sub_input_1Value,university_sub_input_1Value,subject_sub_input_1Value,main_sub_input_1Value,graduation_sub_input_1Value);
+	const new_try =document.createElement("div");
+	new_try.className="new_div";
+	const new_country_input_1=document.createElement("p");
+	const new_university_input_1 =document.createElement("p");
+	const new_subject_input_1 =document.createElement("p");
+	const new_main_subject_input_1 =document.createElement("p");
+	const new_graduation_input_1 =document.createElement("span");
+	const remove =document.createElement("button");
+	remove.className="far fa-trash-alt";
+	const new_country_txt_input_1 = document.createTextNode(country_sub_input_1Value);
+	const new_university_txt_input_1=document.createTextNode(university_sub_input_1Value);
+	const new_subject_txt_input_1 = document.createTextNode(subject_sub_input_1Value);
+	const new_main_txt_subject_input_1=document.createTextNode(main_sub_input_1Value);
+	const new_graduation_txt_input_1 = document.createTextNode(graduation_sub_input_1Value);
+	new_country_input_1.appendChild(new_country_txt_input_1);
+	new_university_input_1.appendChild(new_university_txt_input_1);
+	new_subject_input_1.appendChild(new_subject_txt_input_1);
+	new_main_subject_input_1.appendChild(new_main_txt_subject_input_1);
+	new_graduation_input_1.appendChild(new_graduation_txt_input_1);
+	new_try.appendChild(new_country_input_1);	
+	new_try.appendChild(new_university_input_1);
+	new_try.appendChild(new_subject_input_1);
+	new_try.appendChild(new_main_subject_input_1);
+	new_try.appendChild(new_graduation_input_1);
+	new_try.appendChild(remove);
+	data_sub_output_2.appendChild(new_try);
+
+	$(remove).on("click", function(e){ //user click on remove text
+           
+		e.preventDefault(); 
+		$(this).parent('.new_div').remove(); 
+		});
 });
 
 $('#data_sub_insert_2').click(function(){
@@ -202,26 +254,55 @@ $('#data_sub_insert_2').click(function(){
 });
 
 // SUB OUTPUT_6
-const sub_profile_propertis_6 = document.getElementById('sub_profile_propertis_6');
-const country_sub_input_2 = document.getElementById('country_sub_input_2');
-const university_sub_input_2 = document.getElementById('university_sub_input_2');
-const subject_sub_input_2 = document.getElementById('subject_sub_input_2');
-const main_sub_input_2 = document.getElementById('main_sub_input_2');
-const graduation_sub_input_2 = document.getElementById('graduation_sub_input_2');
-const data_sub_output_6 = document.getElementById('data_sub_output_6');
+
 
 $("#data_sub_insert_6").click( function(event){
-    event.preventDefault();
+	event.preventDefault();
+	const sub_profile_propertis_6 = document.getElementById('sub_profile_propertis_6');
+	const country_sub_input_2 = document.getElementById('country_sub_input_2');
+	const university_sub_input_2 = document.getElementById('university_sub_input_2');
+	const subject_sub_input_2 = document.getElementById('subject_sub_input_2');
+	const main_sub_input_2 = document.getElementById('main_sub_input_2');
+	const graduation_sub_input_2 = document.getElementById('graduation_sub_input_2');
+	const data_sub_output_6 = document.getElementById('data_sub_output_6');
 	const country_sub_input_2Value = country_sub_input_2.value;
 	const university_sub_input_2Value = university_sub_input_2.value;
 	const subject_sub_input_2Value = subject_sub_input_2.value;
 	const main_sub_input_2Value = main_sub_input_2.value;
 	const graduation_sub_input_2Value = graduation_sub_input_2.value;
     console.log(country_sub_input_2Value,university_sub_input_2Value,subject_sub_input_2Value,main_sub_input_2Value,graduation_sub_input_2Value);
-    const education= ` 
-	<p id="data_sub_output_6">${country_sub_input_2Value} <br/>${university_sub_input_2Value} <br/>${subject_sub_input_2Value}<br/>${main_sub_input_2Value}<br/>${graduation_sub_input_2Value}</p>
-    `
-	data_sub_output_6.innerHTML =education;
+	const new_try =document.createElement("div");
+	new_try.className="new_div";
+	const new_country_input_1=document.createElement("p");
+	const new_university_input_1 =document.createElement("p");
+	const new_subject_input_1 =document.createElement("p");
+	const new_main_subject_input_1 =document.createElement("p");
+	const new_graduation_input_1 =document.createElement("span");
+	const remove =document.createElement("button");
+	remove.className="far fa-trash-alt";
+	const new_country_txt_input_1 = document.createTextNode(country_sub_input_2Value);
+	const new_university_txt_input_1=document.createTextNode(university_sub_input_2Value);
+	const new_subject_txt_input_1 = document.createTextNode(subject_sub_input_2Value);
+	const new_main_txt_subject_input_1=document.createTextNode(main_sub_input_2Value);
+	const new_graduation_txt_input_1 = document.createTextNode(graduation_sub_input_2Value);
+	new_country_input_1.appendChild(new_country_txt_input_1);
+	new_university_input_1.appendChild(new_university_txt_input_1);
+	new_subject_input_1.appendChild(new_subject_txt_input_1);
+	new_main_subject_input_1.appendChild(new_main_txt_subject_input_1);
+	new_graduation_input_1.appendChild(new_graduation_txt_input_1);
+	new_try.appendChild(new_country_input_1);	
+	new_try.appendChild(new_university_input_1);
+	new_try.appendChild(new_subject_input_1);
+	new_try.appendChild(new_main_subject_input_1);
+	new_try.appendChild(new_graduation_input_1);
+	new_try.appendChild(remove);
+	data_sub_output_6.appendChild(new_try);
+
+	$(remove).on("click", function(e){ //user click on remove text
+           
+		e.preventDefault(); 
+		$(this).parent('.new_div').remove(); 
+		});
 });
 
 $('#data_sub_insert_6').click(function(){
@@ -336,22 +417,42 @@ $('#data_insert_9').click(function(){
 });
 
 //SUB  OUTPUT_3
-const sub_profile_propertis_3 = document.getElementById('sub_profile_propertis_3');
-const job_sub_input_1 = document.getElementById('job_sub_input_1');
-const pass_sub_input_1 = document.getElementById('pass_sub_input_1');
-const experience_sub_input_1 = document.getElementById('experience_sub_input_1');
-const data_sub_output_3 = document.getElementById('data_sub_output_3');
 
 $("#data_sub_insert_3").click( function(event){
-    event.preventDefault();
+	event.preventDefault();
+	const sub_profile_propertis_3 = document.getElementById('sub_profile_propertis_3');
+	const job_sub_input_1 = document.getElementById('job_sub_input_1');
+	const pass_sub_input_1 = document.getElementById('pass_sub_input_1');
+	const experience_sub_input_1 = document.getElementById('experience_sub_input_1');
+	const data_sub_output_3 = document.getElementById('data_sub_output_3');
 	const job_sub_input_1Value = job_sub_input_1.value;
 	const pass_sub_input_1Value = pass_sub_input_1.value;
 	const experience_sub_input_1Value = experience_sub_input_1.value;
     console.log(job_sub_input_1Value,pass_sub_input_1Value,experience_sub_input_1Value);
-    const contact= ` 
-	<p id="data_sub_output_3">${job_sub_input_1Value}<br/>${pass_sub_input_1Value}<br/>${experience_sub_input_1Value}</p>
-    `
-	data_sub_output_3.innerHTML =contact;
+	const new_try =document.createElement("div");
+	new_try.className="new_div";
+	const new_job_input_1=document.createElement("p");
+	const new_pass_input_1 =document.createElement("p");
+	const new_experience_input_1 =document.createElement("span");
+	const remove =document.createElement("button");
+	remove.className="far fa-trash-alt";
+	const new_job_txt_input_1 = document.createTextNode(job_sub_input_1Value);
+	const new_pass_txt_input_1=document.createTextNode(pass_sub_input_1Value);
+	const new_experience_txt_input_1 = document.createTextNode(experience_sub_input_1Value);
+	new_job_input_1.appendChild(new_job_txt_input_1);
+	new_pass_input_1.appendChild(new_pass_txt_input_1);
+	new_experience_input_1.appendChild(new_experience_txt_input_1);
+	new_try.appendChild(new_job_input_1);	
+	new_try.appendChild(new_pass_input_1);
+	new_try.appendChild(new_experience_input_1);
+	new_try.appendChild(remove);
+	data_sub_output_3.appendChild(new_try);
+
+	$(remove).on("click", function(e){ //user click on remove text
+           
+		e.preventDefault(); 
+		$(this).parent('.new_div').remove(); 
+		});
 });
 
 $('#data_sub_insert_3').click(function(){
@@ -359,26 +460,42 @@ $('#data_sub_insert_3').click(function(){
 });
 
 //SUB  OUTPUT_5
-const sub_profile_propertis_5 = document.getElementById('sub_profile_propertis_5');
-const job_sub_input_2 = document.getElementById('job_sub_input_2');
-const pass_sub_input_2 = document.getElementById('pass_sub_input_2');
-const experience_sub_input_2 = document.getElementById('experience_sub_input_2');
-const data_sub_output_5 = document.getElementById('data_sub_output_5');
 
 $("#data_sub_insert_5").click( function(event){
-    event.preventDefault();
+	event.preventDefault();
+	const sub_profile_propertis_5 = document.getElementById('sub_profile_propertis_5');
+	const job_sub_input_2 = document.getElementById('job_sub_input_2');
+	const pass_sub_input_2 = document.getElementById('pass_sub_input_2');
+	const experience_sub_input_2 = document.getElementById('experience_sub_input_2');
+	const data_sub_output_5 = document.getElementById('data_sub_output_5');
 	const job_sub_input_2Value = job_sub_input_2.value;
 	const pass_sub_input_2Value = pass_sub_input_2.value;
 	const experience_sub_input_2Value = experience_sub_input_2.value;
     console.log(job_sub_input_2Value,pass_sub_input_2Value,experience_sub_input_2Value);
-    const contact= `
-	<div id="data_sub_output_5">
-		<span>${job_sub_input_2Value}</span><br>
-		<span>${pass_sub_input_2Value}</span><br>
-		<span>${experience_sub_input_2Value}</span>
-	</div>
-    `
-	data_sub_output_5.innerHTML =contact;
+	const new_try =document.createElement("div");
+	new_try.className="new_div";
+	const new_job_input_1=document.createElement("p");
+	const new_pass_input_1 =document.createElement("p");
+	const new_experience_input_1 =document.createElement("span");
+	const remove =document.createElement("button");
+	remove.className="far fa-trash-alt";
+	const new_job_txt_input_1 = document.createTextNode(job_sub_input_2Value);
+	const new_pass_txt_input_1=document.createTextNode(pass_sub_input_2Value);
+	const new_experience_txt_input_1 = document.createTextNode(experience_sub_input_2Value);
+	new_job_input_1.appendChild(new_job_txt_input_1);
+	new_pass_input_1.appendChild(new_pass_txt_input_1);
+	new_experience_input_1.appendChild(new_experience_txt_input_1);
+	new_try.appendChild(new_job_input_1);	
+	new_try.appendChild(new_pass_input_1);
+	new_try.appendChild(new_experience_input_1);
+	new_try.appendChild(remove);
+	data_sub_output_5.appendChild(new_try);
+
+	$(remove).on("click", function(e){ //user click on remove text
+           
+		e.preventDefault(); 
+		$(this).parent('.new_div').remove(); 
+		});
 });
 
 $('#data_sub_insert_5').click(function(){
@@ -761,6 +878,48 @@ $("#data_insert_25").click( function(event){
 $('#data_insert_25').click(function(){
 	$("#re_2_pop_13").hide();
 });
+
+// $("#data_sub_insert_1").click( function(event){
+// 	event.preventDefault();
+// 	const sub_profile_propertis_1 = document.getElementById('sub_profile_propertis_1');
+// 	const skill_sub_input_1 = document.getElementById('skill_sub_input_1');
+// 	const sub_expe_input_1 = document.getElementById('sub_expe_input_1');
+// 	const data_sub_output_1 = document.getElementById('data_sub_output_1');
+// 	const skill_sub_input_1Value = skill_sub_input_1.value;
+// 	const sub_expe_input_1Value = sub_expe_input_1.value;
+// 	console.log(skill_sub_input_1Value,sub_expe_input_1Value);
+// 	const new_try =document.createElement("div");
+// 	new_try.className="new_div";
+// 	new_try.style.marginBottom="7px";
+// 	new_try.style.color="#1f1e1ebb";
+// 	const new_skill_input =document.createElement("span");
+// 	const new_expe_input =document.createElement("span");
+// 	const remove =document.createElement("button");
+// 	remove.className="far fa-trash-alt";
+// 	remove.style.border="none";
+// 	remove.style.float="right";
+// 	const new_input_1 =document.createTextNode(skill_sub_input_1Value);
+// 	const new_input_2 =document.createTextNode(" "+ sub_expe_input_1Value);
+// 	new_skill_input.appendChild(new_input_1);
+// 	new_try.appendChild(new_skill_input);
+// 	new_expe_input.appendChild(new_input_2);
+// 	new_try.appendChild(new_expe_input);
+// 	new_try.appendChild(remove);
+// 	data_sub_output_1.appendChild(new_try);
+
+// 	$(remove).on("click", function(e){ //user click on remove text
+           
+// 		e.preventDefault(); 
+// 		$(this).parent('.new_div').remove(); 
+// 		});
+
+// });
+
+
+
+
+
+
 (function($){
 	"use strict";
 

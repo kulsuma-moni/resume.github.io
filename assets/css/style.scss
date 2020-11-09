@@ -647,9 +647,49 @@ outline:0;
                 line-height: $line_height_2;
                 font-weight: 400;
                 cursor: pointer;
+                .new_div{
+                    margin-bottom: 7px;
+                    p{
+                        font-weight: 400;
+                        line-height: $line_height_2;
+                        text-transform: capitalize;
+                        color:#1f1e1ebb;
+                        font-size: 14px;
+                        // background: #483c55ad;
+                        cursor: pointer;
+                        margin-bottom: 7px;
+                        &:hover,&:focus{
+                            color: rgb(16, 18, 46);
+                        }
+                    }
+                    span{
+                        font-weight: 400;
+                        line-height: $line_height_2;
+                        text-transform: capitalize;
+                        color:#1f1e1ebb;
+                        font-size: 14px;
+                        // background: #483c55ad;
+                        cursor: pointer;
+                        margin-bottom: 7px;
+                        &:hover,&:focus{
+                            color: rgb(16, 18, 46);
+                        }
+                    }
+                    button{
+                        border: none;
+                        float: right;
+                        color:#1f1e1ebb;
+                        font-size: 14px;
+                        cursor: pointer;
+                        margin-bottom: 7px;
+                        &:hover,&:focus{
+                            color: rgb(16, 18, 46);
+                        }
+                    }
+                }
             }
             .resum_ctn{
-                padding: 15px 0px;
+                padding: 15px 0px 7px 0;
                 .resum_heading{
                     h4{
                         font-weight: 700;
@@ -671,8 +711,11 @@ outline:0;
                     cursor: pointer;
                     margin-bottom: 7px;
                     &:hover,&:focus{
-                        color: rgb(16, 18, 46)
+                        color: rgb(16, 18, 46);
                     }
+                }
+                .last_span{
+                    padding-left: 10px;
                 }
             }
             .demo_re_left{
@@ -978,6 +1021,46 @@ outline:0;
         cursor: pointer;
         width: 100%;
         padding-left: 20px;
+        .new_div{
+            margin-bottom: 7px;
+            p{
+                font-weight: 400;
+                line-height: $line_height_2;
+                text-transform: capitalize;
+                color:#1f1e1ebb;
+                font-size: 14px;
+                // background: #483c55ad;
+                cursor: pointer;
+                margin-bottom: 7px;
+                &:hover,&:focus{
+                    color: rgb(16, 18, 46);
+                }
+            }
+            span{
+                font-weight: 400;
+                line-height: $line_height_2;
+                text-transform: capitalize;
+                color:#1f1e1ebb;
+                font-size: 14px;
+                cursor: pointer;
+                margin-bottom: 7px;
+                &:hover,&:focus{
+                    color: rgb(16, 18, 46);
+                }
+            }
+            button{
+                border: none;
+                float: right;
+                color:#1f1e1ebb;
+                margin-right: 10px;
+                font-size: 14px;
+                cursor: pointer;
+                margin-bottom: 7px;
+                &:hover,&:focus{
+                    color: rgb(16, 18, 46);
+                }
+            }
+        }
     }
 
     .per_prof{
@@ -1013,7 +1096,7 @@ outline:0;
         }
     }
     .resum_ctn{
-        padding: 15px 0px;
+        padding: 15px 0px 7px 0;
         .resum_heading{
             h4{
                 font-weight: 700;

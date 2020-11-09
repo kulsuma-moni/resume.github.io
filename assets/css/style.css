@@ -639,8 +639,53 @@ button:focus {
   cursor: pointer;
 }
 
+.personal_data_area .right_content .demo_re_1 .add_more_popup .new_div {
+  margin-bottom: 7px;
+}
+
+.personal_data_area .right_content .demo_re_1 .add_more_popup .new_div p {
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #1f1e1ebb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.personal_data_area .right_content .demo_re_1 .add_more_popup .new_div p:hover, .personal_data_area .right_content .demo_re_1 .add_more_popup .new_div p:focus {
+  color: #10122e;
+}
+
+.personal_data_area .right_content .demo_re_1 .add_more_popup .new_div span {
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #1f1e1ebb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.personal_data_area .right_content .demo_re_1 .add_more_popup .new_div span:hover, .personal_data_area .right_content .demo_re_1 .add_more_popup .new_div span:focus {
+  color: #10122e;
+}
+
+.personal_data_area .right_content .demo_re_1 .add_more_popup .new_div button {
+  border: none;
+  float: right;
+  color: #1f1e1ebb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.personal_data_area .right_content .demo_re_1 .add_more_popup .new_div button:hover, .personal_data_area .right_content .demo_re_1 .add_more_popup .new_div button:focus {
+  color: #10122e;
+}
+
 .personal_data_area .right_content .demo_re_1 .resum_ctn {
-  padding: 15px 0px;
+  padding: 15px 0px 7px 0;
 }
 
 .personal_data_area .right_content .demo_re_1 .resum_ctn .resum_heading h4 {
@@ -665,6 +710,10 @@ button:focus {
 
 .personal_data_area .right_content .demo_re_1 .resum_ctn span:hover, .personal_data_area .right_content .demo_re_1 .resum_ctn span:focus {
   color: #10122e;
+}
+
+.personal_data_area .right_content .demo_re_1 .resum_ctn .last_span {
+  padding-left: 10px;
 }
 
 .personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .present_date {
@@ -1029,6 +1078,52 @@ button:focus {
   padding-left: 20px;
 }
 
+.demo_re_2 .add_more_popup .new_div {
+  margin-bottom: 7px;
+}
+
+.demo_re_2 .add_more_popup .new_div p {
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #1f1e1ebb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.demo_re_2 .add_more_popup .new_div p:hover, .demo_re_2 .add_more_popup .new_div p:focus {
+  color: #10122e;
+}
+
+.demo_re_2 .add_more_popup .new_div span {
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #1f1e1ebb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.demo_re_2 .add_more_popup .new_div span:hover, .demo_re_2 .add_more_popup .new_div span:focus {
+  color: #10122e;
+}
+
+.demo_re_2 .add_more_popup .new_div button {
+  border: none;
+  float: right;
+  color: #1f1e1ebb;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.demo_re_2 .add_more_popup .new_div button:hover, .demo_re_2 .add_more_popup .new_div button:focus {
+  color: #10122e;
+}
+
 .demo_re_2 .per_prof {
   text-align: center;
   height: 150px;
@@ -1065,7 +1160,7 @@ button:focus {
 }
 
 .demo_re_2 .resum_ctn {
-  padding: 15px 0px;
+  padding: 15px 0px 7px 0;
 }
 
 .demo_re_2 .resum_ctn .resum_heading h4 {

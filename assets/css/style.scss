@@ -203,6 +203,7 @@ outline:0;
                     height: 20px;
                     width: 20px;
                     left: 3px;
+                    // bottom: 0px;
                     bottom: 3px;
                     background: #fff;
                     transition: .4s;
@@ -449,7 +450,8 @@ outline:0;
             height: 100vh;
             width: 100%;
             .nav_btn{
-                top: 594px;
+                // top: 594px;
+                top: 553px;
                 position: absolute;
                 right: 6%;
                 ul{
@@ -486,7 +488,8 @@ outline:0;
         width: 360px;
         height: 650px;
       ul{
-          margin-top: 30px;
+        //   margin-top: 30px;
+        margin-top: 10px;
           li{
             .person_info{
                 padding-top: 20px;
@@ -756,7 +759,7 @@ outline:0;
                         span{
                            .toggler_btn{
                             width: 35px;
-                            height: 26px;
+                            height: 32px;
                             position: absolute;
                             top: 0;
                             left: 65px; 
@@ -839,9 +842,10 @@ outline:0;
                     .text_style {
                         position: absolute;
                         border-bottom: 1px solid #ced4da;
-                        left: 17%;
-                        width: 66%;
-                        top: 8%;
+                        left: 18%;
+                        width: 62%;
+                        top: 21px;
+                        background: #fff;
                         li{
                             a{
                                 color: $font_color_2;
@@ -1165,10 +1169,10 @@ outline:0;
             span{
                .toggler_btn{
                 width: 35px;
-                height: 26px;
+                height: 32px;
                 position: absolute;
-                top: 0;
-                left: 65px; 
+                top: 5px;
+                left: 98px; 
                    input{
                                   
                     &:checked+ .toggle_switch::before{
@@ -1213,10 +1217,10 @@ outline:0;
             position: absolute;
             content: '';
             width: 2px;
-            height: 700px;
+            height: 100%;
             background: #CBE9E9;
             left: 0;
-            top: 0;
+            top: 3%;
         }
 
         .form-popup {
@@ -1241,9 +1245,10 @@ outline:0;
             .text_style {
                 position: absolute;
                 border-bottom: 1px solid #ced4da;
-                left: 17%;
-                width: 66%;
-                top: 8%;
+                left: 18%;
+                width: 62%;
+                top: 21px;
+                background: #fff;
                 li{
                     a{
                         color: $font_color_2;
@@ -2313,6 +2318,11 @@ outline:0;
         }
     }
 }
-
-
+.demo_re_2_pop_7,
+.demo_re_2_pop_12{
+    padding-left: 10px;
+    span{
+        padding-left: 5px !important;
+    }
+}
 

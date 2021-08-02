@@ -425,7 +425,7 @@ button:focus {
 }
 
 .personal_data_area .animated_sidebar .nav_btn {
-  top: 594px;
+  top: 553px;
   position: absolute;
   right: 6%;
 }
@@ -465,7 +465,7 @@ button:focus {
 }
 
 .personal_data_area .person_side_bar ul {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .personal_data_area .person_side_bar ul li .person_info {
@@ -757,7 +757,7 @@ button:focus {
 
 .personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .en_in span .toggler_btn {
   width: 35px;
-  height: 26px;
+  height: 32px;
   position: absolute;
   top: 0;
   left: 65px;
@@ -840,9 +840,10 @@ button:focus {
 .personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style {
   position: absolute;
   border-bottom: 1px solid #ced4da;
-  left: 17%;
-  width: 66%;
-  top: 8%;
+  left: 18%;
+  width: 62%;
+  top: 21px;
+  background: #fff;
 }
 
 .personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style li a {
@@ -1238,10 +1239,10 @@ button:focus {
 
 .demo_re_2 .courses_area .en_in span .toggler_btn {
   width: 35px;
-  height: 26px;
+  height: 32px;
   position: absolute;
-  top: 0;
-  left: 65px;
+  top: 5px;
+  left: 98px;
 }
 
 .demo_re_2 .courses_area .en_in span .toggler_btn input:checked + .toggle_switch::before {
@@ -1289,10 +1290,10 @@ button:focus {
   position: absolute;
   content: '';
   width: 2px;
-  height: 700px;
+  height: 100%;
   background: #CBE9E9;
   left: 0;
-  top: 0;
+  top: 3%;
 }
 
 .demo_re_2 .demo_re_right .form-popup {
@@ -1318,9 +1319,10 @@ button:focus {
 .demo_re_2 .demo_re_right .quali_summ .text_style {
   position: absolute;
   border-bottom: 1px solid #ced4da;
-  left: 17%;
-  width: 66%;
-  top: 8%;
+  left: 18%;
+  width: 62%;
+  top: 21px;
+  background: #fff;
 }
 
 .demo_re_2 .demo_re_right .quali_summ .text_style li a {
@@ -2117,5 +2119,15 @@ button:focus {
 
 .color_virson_24 .right_content .demo_re_2 .resum_ctn span:hover, .color_virson_24 .right_content .demo_re_2 .resum_ctn span:focus {
   color: #10122e;
+}
+
+.demo_re_2_pop_7,
+.demo_re_2_pop_12 {
+  padding-left: 10px;
+}
+
+.demo_re_2_pop_7 span,
+.demo_re_2_pop_12 span {
+  padding-left: 5px !important;
 }
 /*# sourceMappingURL=style.css.map */

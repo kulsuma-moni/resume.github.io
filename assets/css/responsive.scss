@@ -114,7 +114,7 @@ outline:0;
     z-index: 2;
     position: absolute;
     top: 6px;
-    left: 265px;
+    left: -6px;
     width: 44px;
     height:44px ;
     border-radius: 3px;
@@ -160,6 +160,7 @@ outline:0;
   .s-sidebar__trigger:focus+ .s-sidebar__nav,
   .s-sidebar__trigger:hover+ .s-sidebar__nav {
     left: -20px;
+    z-index: 3;
   }
   .animated_sidebar .nav_btn{
       top: 400px;
@@ -178,7 +179,7 @@ outline:0;
 }
 
 .personal_data_area .right_content textarea {
-  width: 80%;
+  width: 90%;
 }
 .personal_data_area .right_content label {
   left: 11%;
@@ -187,7 +188,7 @@ outline:0;
   width: 80%;
 }
 .personal_data_area .right_content .form-popup {
-  left: 0%;
+  left: -15%;
   z-index: 9;
 }
 
@@ -203,7 +204,9 @@ outline:0;
 
   margin: 0 auto 40px 35px;
 }
-.personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style li a {
+.personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style li a,
+.demo_re_2 .demo_re_right .quali_summ .text_style li a
+ {
 
   font-size: 12px;
 }
@@ -320,11 +323,11 @@ display: none;
   margin: 0 0px 0 11px;
 }
 .personal_data_area .right_content .pre_down_btn ul li .print_btn {
-  font-size: 12px;
+  font-size: 16px;
   padding: 10px 17px;
 }
 .personal_data_area .right_content .pre_down_btn ul li .down_btn {
-  font-size: 12px;
+  font-size: 16px;
   padding: 10px 17px;
   margin-left: 0;
 }
@@ -335,13 +338,34 @@ display: none;
   left: 0%;
 }
 .demo_re_2 .demo_re_left .form-popup{
-  left: 0%;
+  left: -8%;
 }
 .personal_data_area .right_content .demo_re_1 .id_info .form-popup {
   left: -27%;
 }
 .personal_data_area .right_content .form-container .modal_btn {
   left: -16%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right {
+  border-left: 1px solid transparent;
+  padding-left: 0px;
+}
+.personal_data_area .right_content .pre_down_btn ul li a span{
+  display: none;
+}
+.personal_data_area .right_content .pre_down_btn ul li .print_btn i {
+  padding-left: 0px;
+}
+.personal_data_area .right_content .pre_down_btn ul li .down_btn i {
+  padding-left: 0px;
+}
+.demo_re_2 .demo_re_right::before {
+  display: none;
+}
+.demo_re_2 .demo_re_right .quali_summ .text_style,
+.personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style{
+  left: 12%;
+  width: 72%;
 }
 }
 
@@ -355,7 +379,7 @@ display: none;
     z-index: 2;
     position: absolute;
     top: 0px;
-    left: 512px;
+    left:-8px;
     width: 44px;
     height:44px ;
     border-radius: 3px;
@@ -399,12 +423,13 @@ display: none;
   .s-sidebar__trigger:focus+ .s-sidebar__nav,
   .s-sidebar__trigger:hover+ .s-sidebar__nav {
     left: -15px;
+    z-index: 3;
   }
   .animated_sidebar .nav_btn{
       top: 400px;
   }
     .personal_data_area .animated_sidebar .nav_btn {
-      top: 554px;
+      top: 520px;
       right: 64%;
   }
   .personal_data_area .animated_sidebar {
@@ -511,7 +536,7 @@ display: none;
   margin: 0;
 }
 .personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .en_in span .toggler_btn {
-  left: 44px;
+  left: 110px;
 }
 .personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .end_date {
   margin-top: 82px;
@@ -521,21 +546,33 @@ display: none;
   width: 90%;
   margin: 0;
 }
-.personal_data_area .right_content .demo_re_2 .demo_re_left .courses_area .en_in span .toggler_btn {
-  left: 44px;
+.personal_data_area .right_content .demo_re_1 .demo_re_left .courses_area .en_in .pre_txt {
+  margin: 0 0 0 17px;
 }
 .demo_re_2 .demo_re_right {
   margin-top: 24px;
 }
 .demo_re_2 .courses_area .present_date label {
   margin-left: 0px;
-  left: -25%;
+  left: 10%;
 }
 .demo_re_2 .demo_re_left .form-popup{
   left: 0%;
 }
 .demo_re_2 .per_prof .form-popup{
   left: 0%;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right {
+  border-left: 1px solid transparent;
+  padding-left: 0px;
+}
+.demo_re_2 .demo_re_right::before {
+  display: none;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style,
+.demo_re_2 .demo_re_right .quali_summ .text_style {
+  left: 14%;
+  width: 72%;
 }
 }
 
@@ -549,7 +586,7 @@ display: none;
     z-index: 2;
     position: absolute;
     top: 0px;
-    left: 693px;
+    left: 0px;
     width: 44px;
     height:44px ;
     border-radius: 3px;
@@ -559,6 +596,11 @@ display: none;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     display: block;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
   
   .s-sidebar__trigger > i {
@@ -575,7 +617,7 @@ display: none;
     overflow: hidden;
     transition: all .3s ease-in;
     width: 300px;
-    height: 650px;
+    height: 620px;
     background: $sidebar_bg;
     color: $font_color_white;
     z-index: 1;
@@ -595,13 +637,14 @@ display: none;
   .s-sidebar__trigger:focus+ .s-sidebar__nav,
   .s-sidebar__trigger:hover+ .s-sidebar__nav {
     left: -20px;
+    z-index: 3;
   }
   .animated_sidebar .nav_btn{
       top: 400px;
   }
     .personal_data_area .animated_sidebar .nav_btn {
-      top: 570px;
       right: 64%;
+      top: 520px;
   }
   .personal_data_area .animated_sidebar {
     height: auto;
@@ -648,11 +691,8 @@ display: none;
 
   margin: 0 auto 40px 0px;
 }
-.personal_data_area .right_content .demo_template {
-  padding: 60px 0px;
-}
 .personal_data_area .right_content .demo_re_1 .demo_re_left .form-popup {
-  left: -18%;
+  left: -3%;
   
 }
 .personal_data_area .right_content .demo_re_1 .demo_re_left .form-container .modal_btn {
@@ -709,7 +749,7 @@ display: none;
   left: 113px;
 }
 .demo_re_2 .demo_re_left .form-popup {
-  left: -99%;
+  left: 9%;
 }
 
 .demo_re_2 .per_prof .form-popup {
@@ -719,16 +759,23 @@ display: none;
 .personal_data_area .right_content .demo_re_1 .id_info .form-popup {
   left: -5%;
 }
+.personal_data_area .right_content .demo_template{
+  left: 0;
+}
+.personal_data_area .person_side_bar ul li h4.s-sidebar__nav-link span {
+  font-size: 16px;
+  margin-left: 14px;
+}
+.personal_data_area .person_side_bar ul li h4.s-sidebar__nav-link span span .toggler_btn {
+  top: 4px;
+}
+.personal_data_area .right_content .demo_re_1 .demo_re_right .quali_summ .text_style,
+.demo_re_2 .demo_re_right .quali_summ .text_style {
+  left: 9%;
+  width: 82%;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px){
-    //   .personal_data_area .person_side_bar {
-    //     background: $sidebar_bg;
-    //     position: initial;
-    //     padding: 20px 30px;
-    //     left: -340px;
-    //     width: 300px;
-    //     height: 100vh;
-    //   }
   
     .s-sidebar__nav {
       position: absolute;
@@ -757,10 +804,10 @@ display: none;
 .personal_data_area .right_content .demo_re_1 .id_info {
   margin: 0 auto 40px -50px;
 }
-  .personal_data_area .animated_sidebar .nav_btn {
-    top: 560px;
-    left: 0;
-} 
+.personal_data_area .animated_sidebar .nav_btn {
+  top: 516px;
+  left: 37%;
+}
 .personal_data_area .resume_tab .nav-tabs .nav-link {
   font-size: 14px;
   padding: 14px 16px;
@@ -827,5 +874,15 @@ display: none;
       margin-left: 0px;
       left: 9%;
   }
+  .demo_re_2 .demo_re_right .form-popup {
+    left: -87% !important;
+}
 
 }
+@media (min-width: 1200px) and (max-width: 1348px){
+  .personal_data_area .right_content .form-container {
+    width: 600px;
+  }
+}
+
+

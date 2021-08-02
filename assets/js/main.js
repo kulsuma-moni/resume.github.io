@@ -65,9 +65,9 @@ $('#data_insert_3').click(function(){
 });
 
 // SUB OUTPUT_1
+
 $("#data_sub_insert_1").click( function(event){
-	event.preventDefault();
-	const sub_profile_propertis_1 = document.getElementById('sub_profile_propertis_1');
+	event.preventDefault();	
 	const skill_sub_input_1 = document.getElementById('skill_sub_input_1');
 	const sub_expe_input_1 = document.getElementById('sub_expe_input_1');
 	const data_sub_output_1 = document.getElementById('data_sub_output_1');
@@ -94,9 +94,16 @@ $("#data_sub_insert_1").click( function(event){
            
 		e.preventDefault(); 
 		$(this).parent('.new_div').remove(); 
-		});
+	});
 
+		$('.new_div').click(function(){
+		$("#re_1_sub_pop_1").show();
+		});
 });
+
+// $('.demo_re_1_sub_pop_1').click(function(){
+// 	$("#re_1_sub_pop_1").show();
+// 	});
 
 $('#data_sub_insert_1').click(function(){
 	$("#re_1_sub_pop_1").hide();
@@ -969,7 +976,8 @@ $('#data_insert_25').click(function(){
       });
       $('.skill_close_1').click(function(){
         $("#re_pop_3").hide();
-      });
+	  });
+	  
 	//   RESUME_2
 	$('.demo_re_2_pop_3').click(function(){
         $("#re_2_pop_3").show();
